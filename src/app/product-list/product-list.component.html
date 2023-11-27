@@ -1,0 +1,11 @@
+<!-- product-list.component.html -->
+
+<div *ngFor="let product of products" class="product-card">
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>Price: {{ product.price }}</p>
+    <button (click)="addToCart(product)">Add to Cart</button>
+  </div>
+  
+  <button (click)="navigateToProductForm()">Add New Product</button>
+  

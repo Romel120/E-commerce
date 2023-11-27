@@ -1,0 +1,21 @@
+<!-- product-form.component.html -->
+
+<form (submit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="name" />
+    </div>
+  
+    <div>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" [(ngModel)]="description" ></textarea>
+    </div>
+  
+    <div>
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price"  [(ngModel)]="price" />
+    </div>
+  
+    <button type="submit">Add Product</button>
+</form>
+  

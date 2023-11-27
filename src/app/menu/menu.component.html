@@ -1,0 +1,12 @@
+<!-- header.component.html -->
+
+<header class="app-header">
+    <div class="brand">Shop</div>
+    <nav class="app-nav">
+      <a routerLink="/product-list" routerLinkActive="active">Products</a>
+      <a routerLink="/product-form" *ngIf="isAdmin" routerLinkActive="active">Add Product</a>
+      <a routerLink="/cart" routerLinkActive="active">Cart</a>
+      <a routerLink="/account" routerLinkActive="active">Account</a>
+    </nav>
+  </header>
+  
